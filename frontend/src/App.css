@@ -1,0 +1,412 @@
+/*  ===== MOBILE styles (inherited by all devices) ===== 
+/*  ===== See tablet, desktop, and print @media queries at the bottom.
+
+
+/*   ----- Imports  -----  */
+
+/* ...or hosted services like Google Fonts */
+@import url(//fonts.googleapis.com/css?family=Poppins);
+@import url(//fonts.googleapis.com/css?family=Bebas+Neue);
+
+/* npm install modern-normalize 
+                              Resets elements for browser consistancy.  
+                              http://nicolasgallagher.com/about-normalize-css/ 
+                            */
+@import '../node_modules/modern-normalize/modern-normalize.css';
+
+/*   ----- Variables  -----  */
+:root {
+  --custom-green: rgb(19, 156, 19);
+  --custom-sage: rgb(218, 243, 202);
+  --custom-mint: rgb(167, 216, 136);
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+  /* Can alternatively define in html {} or :root {} */
+  color: var(--custom-green);
+  background-color: var(--custom-mint);
+  border: 1px solid var(--custom-green);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  margin: 2.5%;
+  padding: 2.5%;
+}
+
+/* ----- Anchors ----- Text links */
+/* a {}
+
+a:link {}
+
+a:hover {}
+
+a:active {}
+
+a:visited {} */
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  text-align: left;
+}
+
+nav a {
+  background-color: var(--custom-green);
+  color: var(--custom-sage);
+  text-decoration: none;
+  border: 5px solid var(--custom-green);
+  font-weight: bolder;
+  font-size: 1.1em;
+  line-height: 1px;
+  vertical-align: center;
+  padding: 5px;
+  margin: auto 3px;
+}
+
+nav a:hover {
+  background-color: var(--custom-sage);
+  color: var(--custom-green);
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  color: var(--custom-sage);
+  background-color: var(--custom-green);
+  border: 2px solid var(--custom-sage);
+  font-size: 1.1em;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+footer {
+  color: var(--custom-sage);
+  background-color: var(--custom-green);
+  border: 2px solid var(--custom-sage);
+  font-size: .75em;
+  font-weight: normal;
+  margin: auto 1px;
+  padding: 4px;
+}
+
+main {
+  color: var(--custom-green);
+  background-color: var(--custom-sage);
+  border: 3px dashed var(--custom-green);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+/* 
+
+section {}
+
+article {}
+
+#topic1 {}
+
+#topic2 {}
+
+#gallery1 {}
+
+#gallery2 {}
+
+div {}
+
+aside {}
+
+*/
+
+/*  -----  Typography  ----- */
+/* p {}
+
+br {}
+
+ol,
+ul,
+dl {}
+
+li {}
+
+dt {}
+
+dd {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {} */
+
+/* Define consistant font family.*/
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 3.2em;
+  margin-top: 30px;
+  margin-bottom: -15px;
+}
+
+h2 {
+  margin-bottom: -15px;
+}
+
+/* 
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+abbr {}
+
+acronym {}
+
+address {}
+
+blockquote {}
+
+q {}
+
+cite {}
+
+em {}
+
+hr {}
+
+mark {}
+
+s {}
+
+span {}
+
+strong {}
+
+sub {}
+
+sup {}
+
+time {} */
+
+/*  ----- Coding or instructional typography ----- */
+/* pre {}
+
+code {}
+
+kbd {}
+
+samp {}
+
+var {}
+
+del {}
+
+ins {} */
+
+/*  ----- Table ----- */
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+thead {
+  height: 50px;
+  text-align: center;
+  background-color: var(--custom-mint);
+}
+
+tbody {
+  text-align: center;
+}
+
+tr,
+th {
+  border: 1px solid var(--custom-green);
+  white-space: nowrap;
+  padding: 0.5%;
+}
+
+tr,
+td {
+  border: 1px solid var(--custom-green);
+  white-space: nowrap;
+  padding: 0.5%;
+}
+
+tr:nth-child(even) {
+  background-color: var(--custom-mint);
+}
+
+caption {
+  text-align: left;
+  font-weight: bolder;
+}
+
+/*
+tfoot {}
+
+tr {}
+
+th {}
+
+td {}
+
+td:nth-child(1) {}
+
+colgroup {}
+
+data {}
+
+datalist {} */
+
+
+/*  ----- Form ----- */
+form {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  padding: 0.2%;
+}
+
+legend {
+  font-weight: bolder;
+}
+
+fieldset {
+  margin-top: 20px;
+  border: 1px solid var(--custom-green);
+}
+
+label {
+  display: block;
+  margin-top: 1%;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  width: 50%;
+  border: 1px solid var(--custom-green);
+  padding: 1%;
+}
+
+select {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  border: 1px solid var(--custom-green);
+  padding: 0.5%;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  background-color: var(--custom-green);
+  color: var(--custom-sage);
+  border: 5px solid var(--custom-green);
+  padding: 3px;
+}
+
+
+
+/* form {}
+
+input[text] output {}
+
+meter {}
+
+progress {}
+
+select {}
+
+optgroup {}
+
+option {}
+
+textarea {} */
+
+/* ----- Media ----- */
+/* figure {}
+
+figcaption {}
+
+img {}
+
+svg {}
+
+picture {}
+
+source {}
+
+iframe {}
+
+video {}
+
+audio {}
+
+embed {}
+
+object {} */
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+/* .App-logo {
+  color: var(--custom-sage);
+  height: 50px;
+  width: 50px;
+  margin-bottom: -30px;
+} */
+
+/* .runner {
+  height: 25px;
+  width: 25px;
+  size: 25px;
+} */
+
+/* .floatright {}
+
+.floatleft {}
+
+.center-middle {}
+
+.ten {}
+
+.twenty {}
+
+.thirty {}
+
+.forty {}
+
+.fifty {}
+
+.sixty {}
+
+.seventy {}
+
+.eighty {}
+
+.radius {}
+
+.circle {}
+
+.boxshadow {}
+
+.tshadow {}
+
+.gradient {}
+
+.shape {} */
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
